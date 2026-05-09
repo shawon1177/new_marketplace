@@ -17,7 +17,7 @@ SECRET_KEY = 'django-insecure-nk#l6bm9krv+trvundl4$qj(cjov4bz2@9_7jlh49=tm51d*=_
 DEBUG = True
 
 ALLOWED_HOSTS = [
-    "shawon.pythonanywhere.com",
+    '*'
 ]
 
 # ========================
@@ -83,6 +83,7 @@ MIDDLEWARE = [
 
 ROOT_URLCONF = 'config.urls'
 ASGI_APPLICATION = 'config.asgi.application'
+WSGI_APPLICATION = 'config.wsgi.application'
 
 
 # ========================
