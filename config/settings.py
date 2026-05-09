@@ -16,7 +16,12 @@ SECRET_KEY = 'django-insecure-nk#l6bm9krv+trvundl4$qj(cjov4bz2@9_7jlh49=tm51d*=_
 
 DEBUG = True
 
-ALLOWED_HOSTS = ['shawon0077.pythonanywhere.com', 'localhost', '127.0.0.1']
+ALLOWED_HOSTS = [
+    "shawon0077.pythonanywhere.com",
+    "localhost",
+    "127.0.0.1",
+]
+
 
 # ========================
 # CUSTOM USER
@@ -37,6 +42,7 @@ LOGOUT_REDIRECT_URL = "/accounts/login/"
 # ========================
 # EMAIL
 # ========================
+
 EMAIL_BACKEND = "django.core.mail.backends.console.EmailBackend"
 DEFAULT_FROM_EMAIL = "test@market.com"
 
@@ -106,7 +112,7 @@ TEMPLATES = [
 
 
 # ========================
-# DATABASE (SQLite)
+# DATABASE
 # ========================
 
 DATABASES = {
@@ -150,7 +156,7 @@ STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
 
 # ========================
-# MEDIA FILES (LOCAL STORAGE)
+# MEDIA FILES
 # ========================
 
 MEDIA_URL = '/media/'
@@ -168,6 +174,10 @@ CHANNEL_LAYERS = {
 }
 
 
+# ========================
+# CSRF
+# ========================
+
 CSRF_TRUSTED_ORIGINS = [
-    "https://shawon.pythonanywhere.com"
+    "https://shawon0077.pythonanywhere.com",
 ]
