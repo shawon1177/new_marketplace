@@ -1,7 +1,5 @@
 Django==5.1.3
 channels
 daphne
-service-identity
-cryptography
 pillow
 whitenoise
